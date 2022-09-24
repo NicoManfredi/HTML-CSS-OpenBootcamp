@@ -1,0 +1,12 @@
+html {
+    margin: 0%;
+    padding: 0%;
+}
+
+#elemento-1 {
+    color: red;
+}
+
+div ul li#elemento-1 {
+    font-size: 2rem;
+}
