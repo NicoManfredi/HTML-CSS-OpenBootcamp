@@ -1,0 +1,47 @@
+div {
+    height: 500px;
+    width: 500px;
+}
+
+.btn-modern {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid #E1CEB5;
+    background-color: #FFE7CC;
+    color: #083AA9;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btn-modern:hover {
+    background-color: #002E94;
+    color: #E1CEB5;
+    animation: animandoBoton 0.4s forwards;
+}
+
+@keyframes animandoBoton {
+    0% {
+        background-color: #FFE7CC;
+        color: #083AA9;
+    }
+
+    30%{
+        background-color: #002E94;
+        color: #E1CEB5;
+        box-shadow: 3px 3px 5px #636d75; 
+        
+    }
+
+    60% {
+        box-shadow: 5px 5px 5px #636d75; 
+        
+    }
+
+    100% {
+        box-shadow: 8px 8px 5px #636d75; 
+        transform: translateY(-5px);
+    }
+    
+}
+
