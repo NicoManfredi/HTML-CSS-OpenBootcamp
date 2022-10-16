@@ -1,0 +1,60 @@
+body {
+    margin: 20px 10% 0 10%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main div {
+    padding: 1rem;
+}
+
+.lateralBar, .mainContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.lateralBar {
+    background-color: #4158D0;
+    flex-grow: 0;
+}
+
+.mainContent {
+    background-color: #C850C0;
+    color: #FFCC70;
+    flex-grow: 3;
+    padding: 1rem;
+}
+
+.item {
+    color: #FFCC70;
+    border: solid 2px #FFCC70;
+    margin: 0.5rem 0 0 0;
+}
+
+@media (max-width: 640px) {
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .main div {
+        padding: 0.5rem;
+    }
+
+    .lateralBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .mainContent {
+        /* Pongo esta "height" para que quede bien a la vista, pero no es necesario. */
+        height: 10rem;
+    }
+}
