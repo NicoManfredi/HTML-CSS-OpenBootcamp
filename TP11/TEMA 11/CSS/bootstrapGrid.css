@@ -1,0 +1,16 @@
+.elemento {
+    margin: 1rem 0.10rem;
+    color: #EAEAEA;
+}
+
+.col-xs, .col-sm {
+    background-color: #00ABB3;
+}
+
+.col-md, .col-lg {
+    background-color: #3C4048;
+}
+
+.col-xl, .col-xxl {
+    background-color: #B2B2B2;
+}
