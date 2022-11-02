@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="bg-light p-5 rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Mi Jumbotron</h1>
+                <p class="col-md-8 fs-4">
+                    <span class="lead">Este es el contenido de mi Jumbotron:</span>
+                    <hr>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis neque et turpis sodales aliquam. Nullam mi massa, hendrerit eu faucibus gravida, mattis quis purus. Nullam faucibus augue eget arcu luctus volutpat. Cras vehicula risus justo, sed ullamcorper quam blandit quis. Fusce vestibulum, purus fermentum hendrerit accumsan, ex mi cursus ipsum, et finibus enim tortor vel sapien. 
+                </p>
+                    <button type="button" class="btn btn-primary btn-lg mt-2" data-bs-toggle="modal" data-bs-target="#ejemploModal">Presioname!</button>
+                        <div class="modal fade" data-bs-backdrop="static" id="ejemploModal">
+                    <div class="modal-dialog modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">Este es el Header de mi Modal</div>
+                            <div class="modal-body">Este es el Body de mi Modal</div>
+                            <hr>
+                            <div class="body p-3">
+                                <h2 class="fs-5">Mi popover en el Modal</h2>
+                                <p class="p-2">Este <a href="#" role="button" class="btn btn-secondary" data-bs-toggle="popover" title="Titulo del Popover" data-bs-content="Este es el contenido del Popover">boton</a> reacciona con un click.</p>
+                            </div>
+                            <hr>
+                            <div class="body p-3">
+                                <p>Este es un <a href="#" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Este es un tooltip">tooltip</a>.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-outline-secondary " data-bs-dismiss="modal">Cerrar</button>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="m-4 display-5">Mi formulario:</h1>
+            <form>
+                <div class="form-floating mt-4">
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre completo aqui">
+                    <label for="nombre" style="color: #414359;">Nombre completo</label>
+                </div>
+                <div class="form-floating mt-4">
+                    <input type="number" class="form-control" id="telefono" placeholder="Introduce tu telefono aqui">
+                    <label for="telefono" style="color: #414359;">Tu numero de telefono</label>
+                </div>
+                <div class="form-floating mt-4">
+                    <textarea class="form-control" name="texto" id="miTexto" placeholder="Introduce tu texto aqui"></textarea>
+                    <label for="miTexto" style="color: #414359;">Introduce tu texto aquí...</label>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <h1 class="display-5 m-4">Mi tarjeta de Desarrollador:</h1>
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item"><a href="#" class="nav-link active disabled" style="color: #7532FA;"><strong>Manfredi Nicolás</strong></a></li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Quien soy?</h3>
+                    <p class="card-text">Soy un joven de 25 años de edad, vivo en Rosario - Santa Fe (Argentina), actualmente me encuentro trabajando en una empresa como Back Office Agent. Me gustan mucho las motos y entrenar. Mi mayor sueño es volverme un Desarrollador y poder vivir trabajando de forma remota y viajando por el mundo combinando mi pasión por las 2 ruedas!</p>
+                </div>
+                <div class="card-footer">Mail: nico.manfredi7@gmail.com</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+</html>
